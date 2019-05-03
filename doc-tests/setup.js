@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+require('react-capi-puppeteer')(puppeteer);
 
 before(async function () {
   this.browser = await puppeteer.launch();

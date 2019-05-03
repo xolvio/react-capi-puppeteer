@@ -53,10 +53,10 @@ function extractTestsFromFile(source, destination) {
 }
 
 function extractTestsFromDirectory(source, destination) {
-  fs.readdirSync(source).forEach(file => extractTestsFromFile(file, destination));
+  extractTests(fs.readdirSync(source).map(file => path.join(source, file)), destination);
 }
 
-module.exports = function extractTests(source, destination) {
+function extractTests(source, destination) {
   source.forEach(src => {
     if (fs.statSync(src).isDirectory()) {
       extractTestsFromDirectory(src, destination);
@@ -65,3 +65,5 @@ module.exports = function extractTests(source, destination) {
     }
   })
 }
+
+module.exports = extractTests;

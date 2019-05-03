@@ -9,15 +9,18 @@ Interact with your react components from your end-to-end tests.
 
     `yarn add -D https://github.com/xolvio/react-capi-puppeteer`
 
-2. In your tests create a ReactCapi instance and use it to interact with your react components.
+2. Hook into puppeteer
+
+    `require('react-capi-puppeteer')(puppeteer);`
+    
+3. In your tests create a ReactCapi instance and use it to interact with your react components.
 
     ```js
-    const makeCapi = require('react-capi-puppeteer');
     const ExampleComponent = require('../example-app/example-app-component');
 
-    const capi = await makeCapi(page, ExampleComponent);
+    const handle = await page.findReactComponent(ExampleComponent);
 
-    expect(await capi.exists()).to.be.true;
+    expect(await handle.exists()).to.be.true;
     ```
 
 # TODO
