@@ -8,7 +8,8 @@
   "repository": "https://github.com/xolvio/react-capi-puppeteer",
   "scripts": {
     "prepare": "require-self",
-    "test": "node build-doc-tests.js && mocha doc-tests/*.js"
+    "test": "node build-doc-tests.js && mocha doc-tests/*.js",
+    "commit": "npm test && git commit -am"
   },
   "devDependencies": {
     "chai": "^4.2.0",
