@@ -7,7 +7,7 @@ describe("Readme", function () {
     page = await this.browser.newPage();
     await page.goto("http://localhost:3000");
   });
-  it("Example 1", async function () {
+  it("Use page.findReactComponent to find and interact with React components", async function () {
      const ExampleComponent = require('../example-app/example-app-component');
     
      const handle = await page.findReactComponent(ExampleComponent);

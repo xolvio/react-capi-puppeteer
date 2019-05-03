@@ -13,7 +13,7 @@ Interact with your react components from your end-to-end tests.
 
     `require('react-capi-puppeteer')(puppeteer);`
     
-3. In your tests create a ReactCapi instance and use it to interact with your react components.
+3. Use page.findReactComponent to find and interact with React components
 
     ```js
     const ExampleComponent = require('../example-app/example-app-component');
