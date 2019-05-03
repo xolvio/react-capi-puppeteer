@@ -25,7 +25,7 @@ Interact with your react components from your end-to-end tests.
 
 # Reference Docs
 
-The docs are [here](/docs)
+The docs are [here](docs)
 
 # TODO
 
