@@ -23,6 +23,10 @@ Interact with your react components from your end-to-end tests.
     expect(await handle.exists()).to.be.true;
     ```
 
+# Reference Docs
+
+The docs are [here](/docs)
+
 # TODO
 
 This project is in progress, the following still need to be done at a minimum:
