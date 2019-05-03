@@ -1,0 +1,17 @@
+{
+  "name": "reqt-capi",
+  "version": "0.0.1",
+  "description": "Component apis using reqt",
+  "main": "index.js",
+  "author": "Joshua Ohlman <codewriterohs@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "puppeteer": "^1.15.0",
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "resq": "^1.4.0"
+  }
+}
