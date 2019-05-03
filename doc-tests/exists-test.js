@@ -21,7 +21,7 @@ describe("exists", function () {
     
     expect(await handle.exists()).to.be.false;
   })
-  it("You can get any error like this", async function () {
+  it("Example 3", async function () {
     const UnusedComponent = require('../example-app/example-unused-component');
     
     const handle = await page.findReactComponent(UnusedComponent);

@@ -20,7 +20,7 @@ const handle = await page.findReactComponent(UnusedComponent);
 expect(await handle.exists()).to.be.false;
 ```
 
-You can get any error like this
+When the component does not exist there's usually an error which you can view
 
 ```js
 const UnusedComponent = require('../example-app/example-unused-component');
