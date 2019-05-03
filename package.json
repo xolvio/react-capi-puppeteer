@@ -6,11 +6,17 @@
   "author": "Joshua Ohlman <codewriterohs@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/xolvio/react-capi-puppeteer",
+  "scripts": {
+    "prepare": "require-self",
+    "test": "node build-doc-tests.js && mocha doc-tests/*.js"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
+    "marked": "^0.6.2",
     "mocha": "^6.1.4",
     "puppeteer": "^1.15.0",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "require-self": "^0.2.1"
   },
   "dependencies": {
     "resq": "^1.4.0"

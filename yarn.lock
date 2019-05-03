@@ -520,6 +520,11 @@ map-age-cleaner@^0.1.1:
   dependencies:
     p-defer "^1.0.0"
 
+marked@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.6.2.tgz#c574be8b545a8b48641456ca1dbe0e37b6dccc1a"
+  integrity sha512-LqxwVH3P/rqKX4EKGz7+c2G9r98WeM/SW34ybhgNGhUQNKtf1GmmSkJ6cDGJ/t6tiyae49qRkpyTw2B9HOrgUA==
+
 mem@^4.0.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-4.3.0.tgz#461af497bc4ae09608cdb2e60eefb69bff744178"
@@ -813,6 +818,11 @@ require-main-filename@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
+
+require-self@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/require-self/-/require-self-0.2.1.tgz#7bf819cde94e921e1e3d98a451f40f2fac7e19d6"
+  integrity sha512-UtdzH3nSUepBgtIGSoGs3MJOooh3zMYG5qZ3YVv0+1yocJ1oBliUXYoQkR+eKOpCfaGw84jHmGXX5GC8WhdGSA==
 
 resq@^1.4.0:
   version "1.4.0"

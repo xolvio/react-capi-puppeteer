@@ -1,22 +1,24 @@
-Component Apis for React with Puppeteer
+Component Apis for React
 ---------------------------
 
 Interact with your react components from your end-to-end tests.
 
 # Getting started
 
-`yarn add -D https://github.com/xolvio/react-capi-puppeteer`
+1. Install react-capi for puppeteer
 
-In your tests create a ReactCapi instance and use it to interact with your react components.
+    `yarn add -D https://github.com/xolvio/react-capi-puppeteer`
 
-```js
-const makeCapi = require('react-capi-puppeteer');
-const ExampleComponent = require('./my-app-components/example-app-component');
+2. In your tests create a ReactCapi instance and use it to interact with your react components.
 
-const capi = await makeCapi(page, ExampleComponent);
+    ```js
+    const makeCapi = require('react-capi-puppeteer');
+    const ExampleComponent = require('../example-app/example-app-component');
 
-expect(await capi.exists()).to.be.true;
-```
+    const capi = await makeCapi(page, ExampleComponent);
+
+    expect(await capi.exists()).to.be.true;
+    ```
 
 # TODO
 
