@@ -4,7 +4,7 @@ if (typeof module !== 'undefined') {
 
 class ExampleComponent extends React.Component {
   render() {
-    return React.createElement('div', {}, ["React has loaded."]);
+    return React.createElement('input');
   }
 }
 

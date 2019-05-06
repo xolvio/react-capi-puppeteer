@@ -32,12 +32,12 @@ Interact with your react components from your end-to-end tests.
     const ExampleComponent = require('../example-app/example-app-component');
 
     const handle = await page.findReactComponent(ExampleComponent);
-    const elementHandle = handle.getElementHandle();
+    const elementHandle = await handle.getElementHandle();
 
     await elementHandle.click();
     expect(await page.evaluate(function (element) {
-      return element.active;
-    }, element)).to.be.true;
+      return document.activeElement === element;
+    }, elementHandle)).to.be.true;
     ```
 
 3. Interact with your component's api directly
