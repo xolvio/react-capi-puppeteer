@@ -23,6 +23,25 @@ Interact with your react components from your end-to-end tests.
     expect(await handle.exists()).to.be.true;
     ```
 
+# What you can do
+
+1. Find your react component
+2. Interact with it via the browser
+    
+    ```js
+    const ExampleComponent = require('../example-app/example-app-component');
+
+    const handle = await page.findReactComponent(ExampleComponent);
+    const elementHandle = handle.getElementHandle();
+
+    await elementHandle.click();
+    expect(await page.evaluate(function (element) {
+      return element.active;
+    }, element)).to.be.true;
+    ```
+
+3. Interact with your component's api directly
+
 # Reference Docs
 
 The docs are [here](docs)
